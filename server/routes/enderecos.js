@@ -29,9 +29,7 @@ router.post('/', function(req, res) {
 
 });
 
-router.delete('/', function(req, res) {
-
-    console.log('Creating', req.body);
+router.delete('/:latlong', function(req, res) {
 
     fs.readFile( __dirname + "/jsons/" + "delete_sucesso.json", req.body, function (err, data) {
         res.send( data );

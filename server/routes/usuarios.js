@@ -29,7 +29,7 @@ router.post('/', function(req, res) {
 
 });
 
-router.delete('/', function(req, res) {
+router.delete('/:id', function(req, res) {
 
     console.log('Creating', req.body);
 
