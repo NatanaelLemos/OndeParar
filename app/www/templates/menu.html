@@ -28,14 +28,14 @@
       <div class="row" ng-switch on="signed">
 
         <!--Se estiver logado, vai aparecer as duas divs abaixo-->
-        <div class="col-80" ng-switch-when="true">{{user.name}}</div>
+        <div class="col-80" ng-switch-when="true" style="font-size: 17pt; padding-top: 6px;">{{user.name}}</div>
         <div class="col-20" ng-switch-when="true">
           <button ng-click="logout()" class="button button-icon ion-close-round"></button>
         </div>
 
         <!--Se não estiver logado, vai aparecer a div abaixo-->
         <div class="col" ng-switch-default>
-          <button ng-click="login()" class="button op-login-btn">Login</button>
+          <a href="#/app/login" menu-close class="button op-login-btn">Login</a>
         </div>
 
       </div>

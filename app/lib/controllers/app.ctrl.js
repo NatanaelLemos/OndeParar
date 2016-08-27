@@ -1,4 +1,4 @@
-angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout, Facebook) {
+angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout, $location, $http, $ionicLoading, Facebook) {
   $scope.loginData = {};
 
   $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -34,15 +34,22 @@ angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout, Face
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
 
-    if($scope.loginData.email && $scope.loginData.password){
+    $ionicLoading.show({content: 'Aguarde...',showBackdrop: false});
+
+    $http.post('https://onde-parar-api-enriquessp.c9users.io/api/v1/usuarios/login', $scope.loginData)
+    .success(function(data, status, headers, config){
+      console.log('ok', data);
       $scope.signed = true;
-      
       $scope.user = {
-        name: "user"
+        name: data.login
       };
 
+      $ionicLoading.hide();
       $scope.closeLogin();
-    }
+    })
+    .error(function (data, status, header, config) {
+      console.log('erro', data);
+    });
   };
 
 
@@ -62,6 +69,21 @@ angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout, Face
     });
   }
 
+  $scope.signup = function(){
+    $scope.modal.hide();
+    $location.path('#/app/signup');
+  };
+
+  $scope.doSignup = function(){
+    $http.post('https://onde-parar-api-enriquessp.c9users.io/api/v1/usuarios/', $scope.signup)
+    .success(function (data, status, headers, config) {
+        $location.url('#/app/map');
+        
+    })
+    .error(function (data, status, header, config) {
+    });
+  }
+
   $scope.init = function(){
     Facebook.getLoginStatus(function(response) {
       console.log(response);
@@ -69,8 +91,8 @@ angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout, Face
       getMyFacebookInfo(Facebook, function(myInfo){
         if(myInfo){
           $scope.$apply(function(){
-            $scope.user = myInfo;
-            $scope.signed = true;
+            //$scope.user = myInfo;
+            //$scope.signed = true;
           });
         }
       });

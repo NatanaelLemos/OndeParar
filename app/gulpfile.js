@@ -41,8 +41,9 @@ gulp.task('minify-js', function(){
 	'lib/controllers/app.ctrl.js', 
 	'lib/controllers/map.ctrl.js', 
 	'lib/controllers/register.ctrl.js', 
-	'lib/controllers/search.ctrl.js',
-        'lib/cdv-plugin-fb-connect.js'
+	'lib/controllers/search.ctrl.js', 
+	'lib/controllers/signup.ctrl.js',
+    'lib/cdv-plugin-fb-connect.js'
     ])
     .pipe(jsMin())
     .pipe(rename({suffix: '.min'}))
@@ -53,9 +54,9 @@ gulp.task('minify-js', function(){
 ///////COMPILE////////
 
 gulp.task('compile', shell.task([
-    // 'ionic platform add android',
-    // 'ionic plugin add cordova-plugin-geolocation',
-    // 'ionic build android'
+    //  'ionic platform add android',
+    //  'ionic plugin add cordova-plugin-geolocation',
+    //  'ionic build android'
 ], {
     //Se a plataforma já estiver adicionada, vai dar erro e impedir a compilação
     ignoreErrors: true

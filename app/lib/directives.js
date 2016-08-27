@@ -11,7 +11,7 @@ angular.module('starter.directives', [])
       function initialize() {
         navigator.geolocation.getCurrentPosition(function (pos) {
           var myLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
-
+          var map = {};
           //deveria ter uma configuração para isso
           var mapRadius = 100;
 
@@ -30,26 +30,68 @@ angular.module('starter.directives', [])
               content: ""
               });
 
+          var displayStreetLine = function(pos, start, end, color){
+            var directionsService = new google.maps.DirectionsService();
+            var directionsDisplay;
+
+            directionsDisplay = new google.maps.DirectionsRenderer({
+              polylineOptions: {
+                strokeColor: color
+              }
+            });
+
+            var mapOptions = {
+              zoom:7,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              center: {lat: pos.lat(), lng: pos.lng()},
+              supressMarkers: true,
+              markerOptions: null,
+              opacity: 0.6
+            }
+
+            directionsDisplay.setMap(map);
+            var request = {
+                origin:start,
+                destination:end,
+                travelMode: google.maps.DirectionsTravelMode.DRIVING
+            };
+            directionsService.route(request, function(response, status) {
+              if (status == google.maps.DirectionsStatus.OK) {
+                directionsDisplay.setDirections(response);
+              }
+            });
+          }
+
+          var defineNearStreets = function(pos){
+            console.log(pos);
+            
+            displayStreetLine(pos, '-22.812569, -47.067384', '-22.817751, -47.063972', 'blue');
+            displayStreetLine(pos, '-22.814923, -47.064069', '-22.816515, -47.068350', 'red');
+            displayStreetLine(pos, '-22.813182, -47.063865', '-22.817959, -47.062749', 'green');  
+          }
+
           var buscarInformacoes = function(pos) {
                     $http({
                       method: 'GET',
                       url: 'https://onde-parar-api-enriquessp.c9users.io/api/v1/regioes/' + pos.lat() + '&' + pos.lng() + '?proximidade=' + mapRadius
                     }).then(function successCallback(response) {
 
-                        infoWindow.setContent("<b>Vagas:</b> Algumas<br/>" +
+                        infoWindow.setContent("<b>Vagas:</b> "+response.data.vagas+"<br/>" +
                         "<b>Flanelinhas:</b>  " + response.data.incidenciaFlanelinha +"<br/>" +
                         "<b>Zona Azul:</b> " + (response.data.zonaAzul ? "Sim":"Não") +"<br/>" +
                         "<b>Risco de Inundação:</b> " + response.data.riscoInundacao +"<br/>" +
                         "<b>Região Perigosa:</b> " + (response.data.localidadePerigosa ? "Sim":"Não") +"<br/>");
-
+                        
+                        defineNearStreets(pos);
                       }, function errorCallback(response) {
-
+                          console.log(response);
+                          alert(response);
                       });
           };
 
           buscarInformacoes(myLocation);
 
-          var map = new google.maps.Map($element[0], mapOptions);
+          map = new google.maps.Map($element[0], mapOptions);
 
           var populationOptions = {
                 strokeColor: "#FF0000",

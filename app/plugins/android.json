@@ -22,10 +22,10 @@
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.ionicframework.app3857748"
         },
-        "cordova-plugin-whitelist": {
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.app3857748"
         },
-        "ionic-plugin-keyboard": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.ionicframework.app3857748"
         }
     },

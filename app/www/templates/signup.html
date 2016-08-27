@@ -1,0 +1,30 @@
+<ion-view title="Cadastro">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+
+  <form ng-submit="doSignup()">
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Login</span>
+        <input type="text" ng-model="signup.login">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Senha</span>
+        <input type="password" ng-model="signup.senha">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Nome</span>
+        <input type="password" ng-model="signup.nome">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">E-mail</span>
+        <input type="password" ng-model="signup.email">
+      </label>
+      <label class="item">
+        <button class="button button-block button-positive" type="submit">Login</button>
+      </label>
+    </div>
+  </form>
+</ion-view>
