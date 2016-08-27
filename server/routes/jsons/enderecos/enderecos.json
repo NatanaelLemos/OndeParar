@@ -15,15 +15,14 @@
     "longitude": -46.6508,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
   },
@@ -43,15 +42,14 @@
     "longitude": -46.6521,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -72,15 +70,14 @@
     "longitude": -46.6521,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -101,15 +98,14 @@
     "longitude": -46.5697,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -130,15 +126,14 @@
     "longitude": -46.5697,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -159,15 +154,14 @@
     "longitude": -46.6607,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.6019&-46.6607"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
