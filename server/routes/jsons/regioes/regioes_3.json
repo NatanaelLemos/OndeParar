@@ -14,15 +14,15 @@
   "longitude": -46.6508,
   "_links": [
     {
-      "self": {
+      "tipo":"self",
         "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
-      },
-      "enderecos": {
+    },
+    {
+      "tipo":"enderecos",
         "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
-      },
-      "vagas": {
+    },
+    {  "tipo": "vagas",
         "href": "url.vagas.com/regioes/-23.5695&-46.6508/vagas?proximidade=12"
-      }
     }
   ]
 }
