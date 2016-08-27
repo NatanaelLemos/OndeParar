@@ -11,7 +11,7 @@ var Usuario = mongoose.model('Usuario', { login: String, senha: String, nome: St
 router.get('/', function(req, res, next) {
 
     Usuario.
-    find({}).
+    find({}, 'login senha nome email').
     limit(10).
     exec(function(err, usuarios) {
         if (err) {
