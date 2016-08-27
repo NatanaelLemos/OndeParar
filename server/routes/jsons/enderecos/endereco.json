@@ -9,7 +9,21 @@
   "zonaAzul" : true,
   "localidadePerigosa": false,
   "incidenciaFlanelinha": "NENHUMA",
+  "riscoInundacao":"ALTO",
   "latitude": -23.5695,
-  "longitude": -46.6508
+  "longitude": -46.6508,
+  "_links": [
+    {
+      "self": {
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      "vagas": {
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      "vagasDisponiveis": {
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
+      }
+    }
+  ]
 
 }

@@ -39,5 +39,12 @@ router.delete('/', function(req, res) {
 
 });
 
+router.post('/login', function(req, res) {
+
+    fs.appendFile( __dirname + "/jsons/login/" + "login_sucesso.json", req.body, function (err, data) {
+        res.send( data );
+    });
+
+});
 
 module.exports = router;
