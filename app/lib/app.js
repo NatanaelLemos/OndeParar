@@ -13,13 +13,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
   //Retorna a rua mais próxima
   $rootScope.getLocation = function(callBack){
     navigator.geolocation.getCurrentPosition(function (pos) {
-      
+
       var myLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
       var directionsService = new google.maps.DirectionsService();
 
       directionsService.route({
-        origin: myLocation, 
-        destination: myLocation, 
+        origin: myLocation,
+        destination: myLocation,
         travelMode: google.maps.DirectionsTravelMode.DRIVING
       }, function(response, status) {
         if (status == google.maps.DirectionsStatus.OK)
@@ -36,7 +36,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
 })
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-  
+
   .state('app', {
     url: '/app',
     abstract: true,
@@ -53,6 +53,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
     }
   })
 
+  .state('app.register', {
+    url: '/register',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/register.html'
+      }
+    }
+  })
+
   .state('app.map', {
     url: '/map',
     views: {
@@ -62,9 +71,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
       }
     }
   });
-  
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/map');
 });
 
-var angularModule = angular.module('starter.controllers', ['ionic']); 
+var angularModule = angular.module('starter.controllers', ['ionic']);
