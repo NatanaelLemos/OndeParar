@@ -12,6 +12,9 @@ angular.module('starter.directives', [])
         navigator.geolocation.getCurrentPosition(function (pos) {
           var myLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
 
+          //deveria ter uma configuração para isso
+          var mapRadius = 100;
+
           var mapOptions = {
             center: myLocation,
             zoom: 18,
@@ -24,23 +27,27 @@ angular.module('starter.directives', [])
           };
 
           var infoWindow= new google.maps.InfoWindow({
-              content: "<b>Vagas:</b> Algumas<br/>" +
-              "<b>Flanelinhas:</b> Sim<br/>" +
-              "<b>Zona Azul:</b> Não<br/>" +
-              "<b>Risco de Inundação:</b> Sim<br/>" +
-              "<b>Região Perigosa:</b> Sim<br/>"
+              content: ""
               });
 
-          $http({
-            method: 'GET',
-            url: 'http://localhost:3000/api/v1/enderecos'
-          }).then(function successCallback(response) {
+          var buscarInformacoes = function(pos) {
+                    $http({
+                      method: 'GET',
+                      url: 'https://onde-parar-api-enriquessp.c9users.io/api/v1/regioes/' + pos.lat() + '&' + pos.lng() + '?proximidade=' + mapRadius
+                    }).then(function successCallback(response) {
 
-              infoWindow.setContent("");
+                        infoWindow.setContent("<b>Vagas:</b> Algumas<br/>" +
+                        "<b>Flanelinhas:</b>  " + response.data.incidenciaFlanelinha +"<br/>" +
+                        "<b>Zona Azul:</b> " + (response.data.zonaAzul ? "Sim":"Não") +"<br/>" +
+                        "<b>Risco de Inundação:</b> " + response.data.riscoInundacao +"<br/>" +
+                        "<b>Região Perigosa:</b> " + (response.data.localidadePerigosa ? "Sim":"Não") +"<br/>");
 
-            }, function errorCallback(response) {
+                      }, function errorCallback(response) {
 
-            });
+                      });
+          };
+
+          buscarInformacoes(myLocation);
 
           var map = new google.maps.Map($element[0], mapOptions);
 
@@ -53,7 +60,7 @@ angular.module('starter.directives', [])
                 fillOpacity: 0.5,
                 map: map,
                 center: myLocation,
-                radius: 100
+                radius: mapRadius
             };
 
 
@@ -63,7 +70,7 @@ angular.module('starter.directives', [])
             var cityCircle = new google.maps.Circle(populationOptions);
 
             map.addListener('click', function(ev) {
-
+              buscarInformacoes(ev.latLng);
               cityCircle.setCenter(ev.latLng);
               infoWindow.setPosition(ev.latLng);
               infoWindow.open(map);
