@@ -9,6 +9,7 @@
   "zonaAzul" : true,
   "localidadePerigosa": false,
   "incidenciaFlanelinha": "NENHUMA",
+  "riscoInundacao":false;
   "latitude": -23.5695,
   "longitude": -46.6508
 
