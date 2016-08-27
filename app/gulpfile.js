@@ -31,7 +31,7 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('minify-js', function(){
-    gulp.src(['lib/app.js', 'lib/directives.js', 'lib/controllers/app.ctrl.js', 'lib/controllers/map.ctrl.js'])
+    gulp.src(['lib/app.js', 'lib/directives.js', 'lib/controllers/app.ctrl.js', 'lib/controllers/register.ctrl.js', 'lib/controllers/map.ctrl.js'])
         .pipe(jsMin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('www/js'));
@@ -46,7 +46,7 @@ gulp.task('compile', shell.task([
     // 'ionic build android'
 ], {
     //Se a plataforma já estiver adicionada, vai dar erro e impedir a compilação
-    ignoreErrors: true 
+    ignoreErrors: true
 }));
 
 gulp.task("default", ["copy-styles", "copy-scripts", "minify-css", "minify-js", "compile"]);
