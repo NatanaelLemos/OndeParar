@@ -7,12 +7,6 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : true,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "NENHUMA",
-    "riscoInundacao" : "NENHUM",
-    "latitude": -23.5695,
-    "longitude": -46.6508,
     "_links": [
       {
         "tipo": "self",
@@ -34,12 +28,6 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : false,
-    "localidadePerigosa": true,
-    "incidenciaFlanelinha": "MEDIA",
-    "riscoInundacao" : "ALTO",
-    "latitude": -23.5652,
-    "longitude": -46.6521,
     "_links": [
       {
         "tipo": "self",
@@ -62,12 +50,6 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : true,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "NENHUMA",
-    "riscoInundacao" : "NENHUM",
-    "latitude": -23.5652,
-    "longitude": -46.6521,
     "_links": [
       {
         "tipo": "self",
@@ -90,12 +72,6 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : false,
-    "localidadePerigosa": true,
-    "incidenciaFlanelinha": "ALTA",
-    "riscoInundacao" : "MEDIO",
-    "latitude": -23.5352,
-    "longitude": -46.5697,
     "_links": [
       {
         "tipo": "self",
@@ -118,12 +94,6 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : false,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "MEDIA",
-    "riscoInundacao" : "BAIXO",
-    "latitude": -23.5352,
-    "longitude": -46.5697,
     "_links": [
       {
         "tipo": "self",
@@ -146,12 +116,6 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : true,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "BAIXA",
-    "riscoInundacao" : "BAIXO",
-    "latitude": -23.6019,
-    "longitude": -46.6607,
     "_links": [
       {
         "tipo": "self",

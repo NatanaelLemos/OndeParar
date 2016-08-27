@@ -1,8 +1,14 @@
 {
   "id": "c4ca4238a0b923820dcc509a6f75849b",
-  "quantidade" : 23,
-  "estado" : "LIVRE",
   "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+  "estado" : "LIVRE",
+  "zonaAzul" : true,
+  "localidadePerigosa": false,
+  "incidenciaFlanelinha": "NENHUMA",
+  "riscoInundacao":"ALTO",
+  "latitude": -23.5695,
+  "longitude": -46.6508,
+
   "_links": [
     {
       "self": {
