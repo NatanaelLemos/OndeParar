@@ -12,8 +12,20 @@
     "incidenciaFlanelinha": "NENHUMA",
     "riscoInundacao" : "NENHUM",
     "latitude": -23.5695,
-    "longitude": -46.6508
-
+    "longitude": -46.6508,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+        },
+        "vagas": {
+          "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+        },
+        "vagasDisponiveis": {
+          "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
+        }
+      }
+    ]
   },
   {
     "id": "c81e728d9d4c2f636f067f89cc14862c",
@@ -28,7 +40,20 @@
     "incidenciaFlanelinha": "MEDIA",
     "riscoInundacao" : "ALTO",
     "latitude": -23.5652,
-    "longitude": -46.6521
+    "longitude": -46.6521,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.5652&-46.6521"
+        },
+        "vagas": {
+          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/"
+        },
+        "vagasDisponiveis": {
+          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/?estado='LIVRE' "
+        }
+      }
+    ]
 
   },
   {
@@ -44,7 +69,20 @@
     "incidenciaFlanelinha": "NENHUMA",
     "riscoInundacao" : "NENHUM",
     "latitude": -23.5652,
-    "longitude": -46.6521
+    "longitude": -46.6521,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.5652&-46.6521"
+        },
+        "vagas": {
+          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/"
+        },
+        "vagasDisponiveis": {
+          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/?estado='LIVRE' "
+        }
+      }
+    ]
 
   },
   {
@@ -60,7 +98,20 @@
     "incidenciaFlanelinha": "ALTA",
     "riscoInundacao" : "MEDIO",
     "latitude": -23.5352,
-    "longitude": -46.5697
+    "longitude": -46.5697,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.5352&-46.5697"
+        },
+        "vagas": {
+          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/"
+        },
+        "vagasDisponiveis": {
+          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/?estado='LIVRE' "
+        }
+      }
+    ]
 
   },
   {
@@ -76,7 +127,20 @@
     "incidenciaFlanelinha": "MEDIA",
     "riscoInundacao" : "BAIXO",
     "latitude": -23.5352,
-    "longitude": -46.5697
+    "longitude": -46.5697,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.5352&-46.5697"
+        },
+        "vagas": {
+          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/"
+        },
+        "vagasDisponiveis": {
+          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/?estado='LIVRE' "
+        }
+      }
+    ]
 
   },
   {
@@ -92,7 +156,20 @@
     "incidenciaFlanelinha": "BAIXA",
     "riscoInundacao" : "BAIXO",
     "latitude": -23.6019,
-    "longitude": -46.6607
+    "longitude": -46.6607,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607"
+        },
+        "vagas": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/"
+        },
+        "vagasDisponiveis": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/?estado='LIVRE' "
+        }
+      }
+    ]
 
   }
 ]
