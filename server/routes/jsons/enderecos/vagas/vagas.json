@@ -3,6 +3,12 @@
     "id": "c4ca4238a0b923820dcc509a6f75849b",
     "estado" : "LIVRE",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "zonaAzul" : true,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "NENHUMA",
+    "riscoInundacao" : "NENHUM",
+    "latitude": -23.5695,
+    "longitude": -46.6508,
     "_links": [
       {
         "self": {
@@ -19,6 +25,12 @@
     "id": "c81e728d9d4c2f636f067f89cc14862c",
     "estado" : "OCUPADA",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "zonaAzul" : false,
+    "localidadePerigosa": true,
+    "incidenciaFlanelinha": "MEDIA",
+    "riscoInundacao" : "ALTO",
+    "latitude": -23.5652,
+    "longitude": -46.6521,
     "_links": [
       {
         "self": {
@@ -36,6 +48,12 @@
     "id": "c81e728d9d4c2f636f067f89cc14862c",
     "estado" : "OCUPADA",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "zonaAzul" : true,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "NENHUMA",
+    "riscoInundacao" : "NENHUM",
+    "latitude": -23.5695,
+    "longitude": -46.6508,
     "_links": [
       {
         "self": {
@@ -53,6 +71,12 @@
     "id": "c81e728d9d4c2f636f067f89cc14862c",
     "estado" : "OCUPADA",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "zonaAzul" : true,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "NENHUMA",
+    "riscoInundacao" : "NENHUM",
+    "latitude": -23.5652,
+    "longitude": -46.6521,
     "_links": [
       {
         "self": {
@@ -70,6 +94,12 @@
     "id": "c81e728d9d4c2f636f067f89cc14862c",
     "estado" : "OCUPADA",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "zonaAzul" : false,
+    "localidadePerigosa": true,
+    "incidenciaFlanelinha": "ALTA",
+    "riscoInundacao" : "MEDIO",
+    "latitude": -23.5352,
+    "longitude": -46.5697,
     "_links": [
       {
         "self": {
@@ -87,6 +117,12 @@
     "id": "c81e728d9d4c2f636f067f89cc14862c",
     "estado" : "OCUPADA",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "zonaAzul" : false,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "MEDIA",
+    "riscoInundacao" : "BAIXO",
+    "latitude": -23.5352,
+    "longitude": -46.5697,
     "_links": [
       {
         "self": {

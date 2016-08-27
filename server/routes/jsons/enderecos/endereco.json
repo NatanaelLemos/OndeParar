@@ -6,23 +6,16 @@
   "cidade" : "Sao Paulo",
   "estado" : "Sao Paulo",
   "pais" : "Brasil",
-  "zonaAzul" : true,
-  "localidadePerigosa": false,
-  "incidenciaFlanelinha": "NENHUMA",
-  "riscoInundacao":"ALTO",
-  "latitude": -23.5695,
-  "longitude": -46.6508,
   "_links": [
     {
-      "self": {
+      "tipo": "self",
         "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
-      },
-      "vagas": {
+    },
+    {  "tipo": "vagas",
         "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
-      },
-      "vagasDisponiveis": {
+    },
+    { "tipo": "vagasDisponiveis",
         "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
-      }
     }
   ]
 

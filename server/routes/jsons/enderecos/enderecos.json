@@ -7,23 +7,16 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : true,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "NENHUMA",
-    "riscoInundacao" : "NENHUM",
-    "latitude": -23.5695,
-    "longitude": -46.6508,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
   },
@@ -35,23 +28,16 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : false,
-    "localidadePerigosa": true,
-    "incidenciaFlanelinha": "MEDIA",
-    "riscoInundacao" : "ALTO",
-    "latitude": -23.5652,
-    "longitude": -46.6521,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -64,23 +50,16 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : true,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "NENHUMA",
-    "riscoInundacao" : "NENHUM",
-    "latitude": -23.5652,
-    "longitude": -46.6521,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5652&-46.6521/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -93,23 +72,16 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : false,
-    "localidadePerigosa": true,
-    "incidenciaFlanelinha": "ALTA",
-    "riscoInundacao" : "MEDIO",
-    "latitude": -23.5352,
-    "longitude": -46.5697,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -122,23 +94,16 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : false,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "MEDIA",
-    "riscoInundacao" : "BAIXO",
-    "latitude": -23.5352,
-    "longitude": -46.5697,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.5352&-46.5697/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
@@ -151,23 +116,16 @@
     "cidade" : "Sao Paulo",
     "estado" : "Sao Paulo",
     "pais" : "Brasil",
-    "zonaAzul" : true,
-    "localidadePerigosa": false,
-    "incidenciaFlanelinha": "BAIXA",
-    "riscoInundacao" : "BAIXO",
-    "latitude": -23.6019,
-    "longitude": -46.6607,
     "_links": [
       {
-        "self": {
-          "href": "url.vagas.com/enderecos/-23.6019&-46.6607"
-        },
-        "vagas": {
-          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/"
-        },
-        "vagasDisponiveis": {
-          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/?estado='LIVRE' "
-        }
+        "tipo": "self",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508"
+      },
+      {  "tipo": "vagas",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/"
+      },
+      { "tipo": "vagasDisponiveis",
+        "href": "url.vagas.com/enderecos/-23.5695&-46.6508/vagas/?estado='LIVRE' "
       }
     ]
 
