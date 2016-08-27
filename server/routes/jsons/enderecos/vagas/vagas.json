@@ -1,7 +1,6 @@
 [
   {
     "id": "c4ca4238a0b923820dcc509a6f75849b",
-    "quantidade" : 23,
     "estado" : "LIVRE",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
     "_links": [
@@ -18,7 +17,74 @@
 
   {
     "id": "c81e728d9d4c2f636f067f89cc14862c",
-    "quantidade" : 23,
+    "estado" : "OCUPADA",
+    "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/c4ca4238a0b923820dcc509a6f75849b"
+        },
+        "enderecoDaVaga": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607"
+        }
+      }
+    ]
+  }
+,
+
+  {
+    "id": "c81e728d9d4c2f636f067f89cc14862c",
+    "estado" : "OCUPADA",
+    "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/c4ca4238a0b923820dcc509a6f75849b"
+        },
+        "enderecoDaVaga": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607"
+        }
+      }
+    ]
+  }
+,
+
+  {
+    "id": "c81e728d9d4c2f636f067f89cc14862c",
+    "estado" : "OCUPADA",
+    "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/c4ca4238a0b923820dcc509a6f75849b"
+        },
+        "enderecoDaVaga": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607"
+        }
+      }
+    ]
+  }
+,
+
+  {
+    "id": "c81e728d9d4c2f636f067f89cc14862c",
+    "estado" : "OCUPADA",
+    "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607/vagas/c4ca4238a0b923820dcc509a6f75849b"
+        },
+        "enderecoDaVaga": {
+          "href": "url.vagas.com/enderecos/-23.6019&-46.6607"
+        }
+      }
+    ]
+  }
+,
+
+  {
+    "id": "c81e728d9d4c2f636f067f89cc14862c",
     "estado" : "OCUPADA",
     "id_usuario": "c4ca4238a0b923820dcc509a6f75849b",
     "_links": [

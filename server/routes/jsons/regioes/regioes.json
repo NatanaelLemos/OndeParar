@@ -1,0 +1,169 @@
+[
+  {
+    "id": "c4ca4238a0b923820dcc509a6f75849b",
+    "cep" : "01317-001",
+    "bairro" : "Bela Vista",
+    "cidade" : "Sao Paulo",
+    "estado" : "Sao Paulo",
+    "pais" : "Brasil",
+    "zonaAzul" : true,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "NENHUMA",
+    "riscoInundacao" : "NENHUM",
+    "latitude": -23.5695,
+    "longitude": -46.6508,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
+        },
+        "enderecos": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
+        },
+        "vagas": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/vagas?proximidade=12"
+        }
+      }
+    ]
+  },
+  {
+    "id": "c81e728d9d4c2f636f067f89cc14862c",
+    "cep" : "01317-001",
+    "bairro" : "Aricanduva",
+    "cidade" : "Sao Paulo",
+    "estado" : "Sao Paulo",
+    "pais" : "Brasil",
+    "zonaAzul" : false,
+    "localidadePerigosa": true,
+    "incidenciaFlanelinha": "MEDIA",
+    "riscoInundacao" : "ALTO",
+    "latitude": -23.5652,
+    "longitude": -46.6521,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
+        },
+        "enderecos": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
+        },
+        "vagas": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/vagas?proximidade=12"
+        }
+      }
+    ]
+
+  },
+  {
+    "id": "eccbc87e4b5ce2fe28308fd9f2a7baf3",
+    "cep" : "01317-001",
+    "bairro" : "Bela Vista",
+    "cidade" : "Sao Paulo",
+    "estado" : "Sao Paulo",
+    "pais" : "Brasil",
+    "zonaAzul" : true,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "NENHUMA",
+    "riscoInundacao" : "NENHUM",
+    "latitude": -23.5652,
+    "longitude": -46.6521,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
+        },
+        "enderecos": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
+        }
+      }
+    ]
+
+  },
+  {
+    "id": "a87ff679a2f3e71d9181a67b7542122c",
+    "logradouro" : "Rua Heliópolis",
+    "cep" : "01317-001",
+    "bairro" : "Vila Hamburguesa",
+    "cidade" : "Sao Paulo",
+    "estado" : "Sao Paulo",
+    "pais" : "Brasil",
+    "zonaAzul" : false,
+    "localidadePerigosa": true,
+    "incidenciaFlanelinha": "ALTA",
+    "riscoInundacao" : "MEDIO",
+    "latitude": -23.5352,
+    "longitude": -46.5697,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
+        },
+        "enderecos": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
+        },
+        "vagas": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/vagas?proximidade=12"
+        }
+      }
+    ]
+
+  },
+  {
+    "id": "e4da3b7fbbce2345d7772b0674a318d5",
+    "logradouro" : "Av Celso Garcia",
+    "cep" : "01317-001",
+    "bairro" : "Tatuapé",
+    "cidade" : "Sao Paulo",
+    "estado" : "Sao Paulo",
+    "pais" : "Brasil",
+    "zonaAzul" : false,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "MEDIA",
+    "riscoInundacao" : "BAIXO",
+    "latitude": -23.5352,
+    "longitude": -46.5697,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
+        },
+        "enderecos": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
+        },
+        "vagas": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/vagas?proximidade=12"
+        }
+      }
+    ]
+
+  },
+  {
+    "id": "1679091c5a880faf6fb5e6087eb1b2dc",
+    "logradouro" : "Av Ibirapuera",
+    "cep" : "01317-001",
+    "bairro" : "Indianópolis",
+    "cidade" : "Sao Paulo",
+    "estado" : "Sao Paulo",
+    "pais" : "Brasil",
+    "zonaAzul" : true,
+    "localidadePerigosa": false,
+    "incidenciaFlanelinha": "BAIXA",
+    "riscoInundacao" : "BAIXO",
+    "latitude": -23.6019,
+    "longitude": -46.6607,
+    "_links": [
+      {
+        "self": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
+        },
+        "enderecos": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
+        },
+        "vagas": {
+          "href": "url.vagas.com/regioes/-23.5695&-46.6508/vagas?proximidade=12"
+        }
+      }
+    ]
+
+  }
+]
