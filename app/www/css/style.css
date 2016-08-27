@@ -10,3 +10,9 @@ map {
 .op-footer-bar{
   height: 60px;
 }
+
+.op-login-btn{
+  width: 100%; 
+  border: 0; 
+  background-color: transparent;
+}

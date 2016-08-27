@@ -53,15 +53,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-  })
-
   .state('app.map', {
     url: '/map',
     views: {
@@ -75,3 +66,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/map');
 });
+
+var angularModule = angular.module('starter.controllers', ['ionic']); 
