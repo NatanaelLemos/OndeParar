@@ -1,0 +1,46 @@
+<ion-view title="Postar">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header has-footer">
+      <ion-list>
+      <ion-item>
+          Por favor, forneça maiores informações<br/> sobre sua localização
+      </ion-item>
+      <ion-item>
+          <b>Local:</b> Av. Joaquim Bueno de Campos, 465, Cruzeiro
+      </ion-item>
+
+      <ion-item>
+          <div class="item item-divider">Vagas</div>
+          <ion-radio ng-model="choice" ng-value="'A'">Muitas</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'B'">Algumas</ion-radio>
+          <ion-radio ng-model="choice" ng-value="'C'">Nenhuma</ion-radio>
+      </ion-item>
+
+        <ion-checkbox ng-model="zonaazul">Zona Azul</ion-checkbox>
+
+        <ion-checkbox ng-model="perigo">Região Perigosa</ion-checkbox>
+
+        <ion-checkbox ng-model="flanelinha">Flanelinha</ion-checkbox>
+
+      <ion-checkbox ng-model="inundacao">Risco de Inundação</ion-checkbox>
+
+    </ion-list>
+
+  </ion-content>
+
+
+
+<ion-footer-bar align-title="left">
+  <div class="buttons">
+    <button class="button button-positive">Confirmar</button>
+
+
+  </div>
+  <h1 class="title"></h1>
+  <div class="buttons" ng-click="doSomething()">
+        <button class="button button-stable">Cancelar</button>
+  </div>
+</ion-footer-bar>
+</ion-view>
