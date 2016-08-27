@@ -5,6 +5,7 @@
   "cidade" : "Sao Paulo",
   "estado" : "Sao Paulo",
   "pais" : "Brasil",
+  "vagas": "NENHUMA",
   "zonaAzul" : true,
   "localidadePerigosa": false,
   "incidenciaFlanelinha": "NENHUMA",
