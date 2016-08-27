@@ -200,6 +200,9 @@ definitions:
       incidenciaFlanelinha:
         type: string
         description: Assiduidade de Flanelinhas no Endereco.
+      riscoInundacao:
+        type: string
+        description: Grau de risco de haver inundação no Endereco.
       latitude: 
         type: number
         description: Coordenada Latitude do Endereco.
