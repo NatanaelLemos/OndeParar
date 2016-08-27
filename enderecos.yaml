@@ -3,14 +3,14 @@ info:
   title: OndeParar
   description: API para indicar vagas para estacionar na rua, desenvolvida pelo grupo 09.
   version: "1.0.0"
-host: grupo09.ondeparar.com
+host: onde-parar-api-enriquessp.c9users.io
 schemes:
   - https
-basePath: /v1
+basePath: /api/v1
 produces:
   - application/json
 paths:
-  /Enderecos:
+  /enderecos:
     get:
       summary: Endereços das Vagas.
       description: |
@@ -35,7 +35,7 @@ paths:
       responses:
         405:
           description: Method not allowed
-  /Endereco/{id}:
+  /enderecos/{latlong}:
     get:
       summary: Descrição de um Endereço.
       description: |
@@ -43,11 +43,11 @@ paths:
       tags:
         - Enderecos
       parameters:
-          - name: id
+          - name: latlong
             in: path
             required: true
-            type: number
-            format: double
+            type: string
+            format: ''
       responses:
         200:
           description: Descrição do Endereco.
@@ -77,65 +77,61 @@ paths:
           description: Unexpected error
           schema:
             $ref: '#/definitions/Error'
-  /Endereco/{id}/Vagas:
-    get:
-      summary: Vagas em um determinado Endereco (rua, avenidad etc.).
+  /enderecos/{latlong}:
+    delete:
+      summary: Descrição de um Endereço.
       description: |
-        Esse endpoint retorna as Vagas constantes no Endereco.
+        Esse endpoint retorna os dados do Endereco passado no parâmetro {id}.
       tags:
         - Enderecos
       parameters:
-          - name: id
+          - name: latlong
             in: path
             required: true
             type: string
+            format: ''
       responses:
         200:
-          description: Quantidade de Vagas e se há Vaga livre.
+          description: Descrição do Endereco.
           schema:
             type: object
             items:
-              $ref: '#/definitions/EnderecoVaga'
+              $ref: '#/definitions/Endereco'
         401:
           description: Retorna erro quando se tenta acessar o recurso sem autenticação.
           schema:
             type: object
             items:
-              $ref: '#/definitions/EnderecoVaga'
+              $ref: '#/definitions/Endereco'
         403:
           description: Retorna erro quando se tenta acessar o recurso sem autorização.
           schema:
             type: object
             items:
-              $ref: '#/definitions/EnderecoVaga'
+              $ref: '#/definitions/Endereco'
         404:
-          description: Nenhuma Vaga encontrado para o Endereco fornecido.
+          description: Nenhum endereco encontrado para o id fornecido.
           schema:
             type: object
             items:
-              $ref: '#/definitions/EnderecoVaga'
+              $ref: '#/definitions/Endereco'
         default:
           description: Unexpected error
           schema:
-            $ref: '#/definitions/Error' 
-  /Endereco/{lat},{long}/Vagas:
-    get:
+            $ref: '#/definitions/Error'
+  /enderecos/{latlong}/vagas:
+    post:
       summary: Vagas em uma dada coordenada.
       description: |
         Esse endpoint retorna as Vagas constantes na coordenada.
       tags:
         - Enderecos
       parameters:
-          - name: lat
+          - name: latlong
             in: path
             required: true
-            type: number
-            format: double
-          - name: long
-            in: path
-            required: true
-            type: number
-            format: double
+            type: string
+            format: ''
       responses:
         200:
           description: Quantidade de Vagas e se há Vaga livre.
@@ -164,14 +160,102 @@ paths:
         default:
           description: Unexpected error
           schema:
-            $ref: '#/definitions/Error'  
-    
+            $ref: '#/definitions/Error'
+  /enderecos/{latlong}/vagas:
+    get:
+      summary: Vagas em uma dada coordenada.
+      description: |
+        Esse endpoint retorna as Vagas constantes na coordenada.
+      tags:
+        - Enderecos
+      parameters:
+          - name: latlong
+            in: path
+            required: true
+            type: string
+            format: ''
+      responses:
+        200:
+          description: Quantidade de Vagas e se há Vaga livre.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        401:
+          description: Retorna erro quando se tenta acessar o recurso sem autenticação.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        403:
+          description: Retorna erro quando se tenta acessar o recurso sem autorização.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        404:
+          description: Nenhuma Vaga encontrado para as coordenadas fornecidas.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /enderecos/{latlong}/vagas/{id}:
+    delete:
+      summary: Vagas em uma dada coordenada.
+      description: |
+        Esse endpoint retorna as Vagas constantes na coordenada.
+      tags:
+        - Enderecos
+      parameters:
+          - name: latlong
+            in: path
+            required: true
+            type: string
+            format: ''
+          - name: id
+            in: path
+            required: true
+            type: string
+            format: ''
+      responses:
+        200:
+          description: Quantidade de Vagas e se há Vaga livre.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        401:
+          description: Retorna erro quando se tenta acessar o recurso sem autenticação.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        403:
+          description: Retorna erro quando se tenta acessar o recurso sem autorização.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        404:
+          description: Nenhuma Vaga encontrado para as coordenadas fornecidas.
+          schema:
+            type: object
+            items:
+              $ref: '#/definitions/EnderecoVaga'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
 definitions:
   Endereco:
     type: object
-    properties:  
+    properties:
       id:
-       type: string 
+       type: string
        description: Chave primária que diferencia um Endereco.
       logradouro:
        type: string
@@ -180,7 +264,7 @@ definitions:
         type: string
         description: CEP do Endereco.
       bairro:
-        type: string 
+        type: string
         description: Bairro do Endereco.
       cidade:
         type: string
@@ -194,7 +278,7 @@ definitions:
       zonaAzul:
         type: boolean
         description: Se o Endereco possui Zona Azul.
-      localidadePerigosa: 
+      localidadePerigosa:
         type: boolean
         description: Se o Endereco é considerado perigoso.
       incidenciaFlanelinha:
@@ -203,7 +287,7 @@ definitions:
       riscoInundacao:
         type: string
         description: Grau de risco de haver inundação no Endereco.
-      latitude: 
+      latitude:
         type: number
         description: Coordenada Latitude do Endereco.
         format: double
@@ -213,11 +297,11 @@ definitions:
         format: double
   EnderecoVaga:
     type: object
-    properties: 
-      id: 
+    properties:
+      id:
         description: Chave primária que diferencia cada endereco ou coordenada de vagas.
         type: string
-      quantidade: 
+      quantidade:
         description: Quantidade total de vagas cadastradas para o(s) parametro(s) fornecido(s).
         type: integer
       estado:
