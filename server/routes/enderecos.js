@@ -23,7 +23,7 @@ router.get('/:latlong', function(req, res, next) {
 
 router.post('/', function(req, res) {
 
-    fs.appendFile( __dirname + "/jsons/" + "post_sucesso.json", req.body, function (err, data) {
+    fs.readFile( __dirname + "/jsons/" + "post_sucesso.json", req.body, function (err, data) {
         res.send( data );
     });
 
@@ -33,7 +33,7 @@ router.delete('/', function(req, res) {
 
     console.log('Creating', req.body);
 
-    fs.appendFile( __dirname + "/jsons/" + "delete_sucesso.json", req.body, function (err, data) {
+    fs.readFile( __dirname + "/jsons/" + "delete_sucesso.json", req.body, function (err, data) {
         res.send( data );
     });
 
