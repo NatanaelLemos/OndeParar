@@ -6,7 +6,9 @@ var fs = require("fs");
 router.get('/:latlong', function(req, res, next) {
   console.log('Testing......', req.params.id);
 
-  fs.readFile( __dirname + "/jsons/regioes/" + "regioes.json", 'utf8', function (err, data) {
+  var fileNumber = Math.floor(Math.random() * 3) + 1
+
+  fs.readFile( __dirname + "/jsons/regioes/" + "regioes_"+fileNumber+".json", 'utf8', function (err, data) {
     res.end( data );
   });
 

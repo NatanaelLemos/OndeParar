@@ -1,0 +1,28 @@
+{
+  "id": "c4ca4238a0b923820dcc509a6f75849b",
+  "cep" : "01317-001",
+  "bairro" : "Bela Vista",
+  "cidade" : "Sao Paulo",
+  "estado" : "Sao Paulo",
+  "pais" : "Brasil",
+  "vagas": "MUITAS",
+  "zonaAzul" : true,
+  "localidadePerigosa": false,
+  "incidenciaFlanelinha": "NENHUMA",
+  "riscoInundacao" : "ALGUM",
+  "latitude": -23.5695,
+  "longitude": -46.6508,
+  "_links": [
+    {
+      "self": {
+        "href": "url.vagas.com/regioes/-23.5695&-46.6508?proximidade=12"
+      },
+      "enderecos": {
+        "href": "url.vagas.com/regioes/-23.5695&-46.6508/enderecos?proximidade=12"
+      },
+      "vagas": {
+        "href": "url.vagas.com/regioes/-23.5695&-46.6508/vagas?proximidade=12"
+      }
+    }
+  ]
+}
