@@ -1,12 +1,13 @@
 angular.module('starter.directives', [])
 
-.directive('map', function() {
+.directive('map', ['$http', function($http) {
   return {
     restrict: 'E',
     scope: {
       onCreate: '&'
     },
     link: function ($scope, $element, $attr, $rootScope) {
+
       function initialize() {
         navigator.geolocation.getCurrentPosition(function (pos) {
           var myLocation = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
@@ -22,6 +23,25 @@ angular.module('starter.directives', [])
             rotateControl: false
           };
 
+          var infoWindow= new google.maps.InfoWindow({
+              content: "<b>Vagas:</b> Algumas<br/>" +
+              "<b>Flanelinhas:</b> Sim<br/>" +
+              "<b>Zona Azul:</b> Não<br/>" +
+              "<b>Risco de Inundação:</b> Sim<br/>" +
+              "<b>Região Perigosa:</b> Sim<br/>"
+              });
+
+          $http({
+            method: 'GET',
+            url: 'http://localhost:3000/api/v1/enderecos'
+          }).then(function successCallback(response) {
+
+              infoWindow.setContent("");
+
+            }, function errorCallback(response) {
+
+            });
+
           var map = new google.maps.Map($element[0], mapOptions);
 
           var populationOptions = {
@@ -35,13 +55,7 @@ angular.module('starter.directives', [])
                 center: myLocation,
                 radius: 100
             };
-            var infoWindow= new google.maps.InfoWindow({
-                content: "<b>Vagas:</b> Algumas<br/>" +
-                "<b>Flanelinhas:</b> Sim<br/>" +
-                "<b>Zona Azul:</b> Não<br/>" +
-                "<b>Risco de Inundação:</b> Sim<br/>" +
-                "<b>Região Perigosa:</b> Sim<br/>"
-                });
+
 
             infoWindow.setPosition(myLocation);
             infoWindow.open(map);
@@ -74,4 +88,4 @@ angular.module('starter.directives', [])
       }
     }
   }
-});
+}]);
