@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives', 'facebook'])
 .run(function($ionicPlatform, $rootScope) {
   $ionicPlatform.ready(function() {
     if (window.cordova && window.cordova.plugins.Keyboard) {
@@ -34,9 +34,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.directives']
     });
   }
 })
-.config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
+.config(function($stateProvider, $urlRouterProvider, FacebookProvider) {
 
+  FacebookProvider.init('1765573993727385');
+  // FacebookProvider.init({
+  //   appId: '1765573993727385',
+  //   oauth: true,
+  //   localSDK: '//connect.facebook.net/en_US/sdk.js', //Load sdk async
+  //   nativeInterface: CDV.FB,
+  //   status: false,
+  //   frictionlessRequests: true,
+  //   useCachedDialogs: false,
+  //   cookies:true
+  // },false);
+
+  $stateProvider
   .state('app', {
     url: '/app',
     abstract: true,

@@ -1,4 +1,4 @@
-angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout, Facebook) {
   $scope.loginData = {};
 
   $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -16,9 +16,19 @@ angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   };
 
   $scope.logout = function(){
-    $scope.signed = false;
-    $scope.user = {};
-    $scope.loginData = {};
+    if($scope.loginWithFacebook){
+      Facebook.logout(function() {
+        $scope.$apply(function() {
+          $scope.signed = false;
+          $scope.user = {};
+          $scope.loginData = {};  
+        });
+      });
+    }else{
+      $scope.signed = false;
+      $scope.user = {};
+      $scope.loginData = {};
+    }
   }
 
   $scope.doLogin = function() {
@@ -34,4 +44,43 @@ angularModule.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
       $scope.closeLogin();
     }
   };
+
+
+  $scope.loginFacebook = function(){
+    Facebook.login(function(response) {
+      $scope.$apply(function() {
+        console.log('facebook login response', response);
+        getMyFacebookInfo(Facebook, function(myInfo){
+          $scope.$apply(function() {
+            $scope.loginWithFacebook = true;
+            $scope.user = myInfo;
+            $scope.signed = true;
+            $scope.closeLogin();
+          });
+        });
+      });
+    });
+  }
+
+  $scope.init = function(){
+    Facebook.getLoginStatus(function(response) {
+      console.log(response);
+
+      getMyFacebookInfo(Facebook, function(myInfo){
+        if(myInfo){
+          $scope.$apply(function(){
+            $scope.user = myInfo;
+            $scope.signed = true;
+          });
+        }
+      });
+    });  
+  }
 });
+
+function getMyFacebookInfo(fbProvider, callBack){
+  fbProvider.api('/me', function(myInfo) {
+    console.log('facebook me', myInfo);
+    callBack(myInfo);  
+  });
+}

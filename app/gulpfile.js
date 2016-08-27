@@ -1,4 +1,4 @@
-"user strict";
+"use strict";
 
 var gulp = require('gulp'),
     bower = require('gulp-bower'),
@@ -21,6 +21,10 @@ gulp.task("copy-styles", ["bower"], function(){
 gulp.task("copy-scripts",["bower"], function(){
     gulp.src(["bower_components/ionic/js/ionic.bundle.min.js"])
         .pipe(gulp.dest("www/js"));
+    gulp.src(["bower_components/angular-facebook/lib/angular-facebook.js"])
+        .pipe(gulp.dest("www/js"));
+    gulp.src(["bower_components/angular-facebook/lib/angular-facebook-phonegap.js"])
+        .pipe(gulp.dest("www/js"));
 });
 
 gulp.task('minify-css', function() {
@@ -31,10 +35,18 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('minify-js', function(){
-    gulp.src(['lib/app.js', 'lib/directives.js', 'lib/controllers/app.ctrl.js', 'lib/controllers/map.ctrl.js', 'lib/controllers/register.ctrl.js', 'lib/controllers/search.ctrl.js'])
-        .pipe(jsMin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('www/js'));
+    gulp.src([
+	'lib/app.js', 
+	'lib/directives.js', 
+	'lib/controllers/app.ctrl.js', 
+	'lib/controllers/map.ctrl.js', 
+	'lib/controllers/register.ctrl.js', 
+	'lib/controllers/search.ctrl.js',
+        'lib/cdv-plugin-fb-connect.js'
+    ])
+    .pipe(jsMin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('www/js'));
 });
 
 //////////////////////
